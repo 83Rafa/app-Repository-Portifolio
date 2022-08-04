@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/layout_half_padding"
+    app:cardElevation="@dimen/layout_half_padding"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_owner"
+            android:layout_width="@dimen/iciv_dimension"
+            android:layout_height="@dimen/iciv_dimension"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_repo_name"
+            android:layout_width="@dimen/standard_dimension"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_half_padding"
+            android:layout_marginTop="@dimen/layout_half_padding"
+            android:layout_marginEnd="@dimen/layout_half_padding"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_owner"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@sample/repositories.json/data/name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_repo_description"
+            android:layout_width="@dimen/standard_dimension"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_half_padding"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_repo_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_repo_name"
+            tools:text="@sample/repositories.json/data/description" />
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_star"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            app:chipBackgroundColor="@color/white"
+            app:chipIcon="@drawable/ic_stars"
+            app:chipIconTint="#FAFA02"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_repo_language"
+            app:layout_constraintStart_toEndOf="@id/tv_repo_language"
+            app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
+            tools:text="@sample/repositories.json/data/stargazers_count" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_forks"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:chipBackgroundColor="@color/white"
+            app:chipIcon="@drawable/ic_forks"
+            app:chipIconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/chip_star"
+            app:layout_constraintStart_toEndOf="@id/chip_star"
+            app:layout_constraintTop_toBottomOf="@+id/tv_repo_description"
+            tools:text="@sample/repositories.json/data/stargazers_count" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_repo_language"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="@+id/tv_repo_description"
+            app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
+            tools:text="@sample/repositories.json/data/language" />
+
+        <ImageButton
+            android:id="@+id/bt_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/chip_forks"
+            app:layout_constraintEnd_toStartOf="@+id/bt_share"
+            app:layout_constraintTop_toTopOf="@+id/chip_forks"
+            app:srcCompat="@drawable/ic_favorite_off"
+            android:contentDescription="@string/image_button" />
+
+        <ImageButton
+
+            android:id="@+id/bt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_half_padding"
+            android:layout_marginStart="@dimen/layout_half_padding"
+            android:background="@color/bt_share_bg_color"
+            app:layout_constraintBottom_toBottomOf="@+id/bt_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bt_favorite"
+            app:srcCompat="@drawable/ic_share"
+            android:contentDescription="@string/image_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

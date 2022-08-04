@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336313944769",
+    "project_id": "git-favorites",
+    "storage_bucket": "git-favorites.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336313944769:android:32a02b2fd410c5cc96e240",
+        "android_client_info": {
+          "package_name": "me.rsilval.myrepository"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336313944769-ha9ir5ue2sel5hgt69s7c4rkeske51ee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeh25YHpAMmyhn1FmagD5N92i8nlH3p7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336313944769-ha9ir5ue2sel5hgt69s7c4rkeske51ee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Repositórios</string>
+    <string name="action_search">Buscar</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favoritos</string>
+    <string name="view_book_web">Abrir na Web</string>
+    <string name="hello_blank_fragment">fragmento em branco</string>
+    <string name="tab_item_home">Home</string>
+    <string name="image_button">Botão de Imagem</string>
+    <string name="Git">link GitHub</string>
+    <string name="tab_item_favorites">Favoritos</string>
+</resources>
